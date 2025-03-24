@@ -21,7 +21,14 @@
             align-items: center;
             justify-content: space-between;
         }
-
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}html {
+    scroll-behavior: smooth;
+}
         header img {
             height: 50px;
         }
@@ -49,14 +56,7 @@
             background-color: #4CAF50;
             color: white;
         }
-@media (max-width: 768px) {
-    .services-list {
-        flex-direction: column;
-        align-items: center;
-    }
-}html {
-    scroll-behavior: smooth;
-}
+
         .hero h1 {
             margin: 0;
             font-size: 2.5em;
@@ -80,7 +80,7 @@
         .services-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+      
         }
 
         .service {
@@ -97,6 +97,7 @@
 
         .service h3 {
             color: #388E3C;
+			flex-wrap: wrap;
         }
 
         .contact {
